@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, maximum-scale=1,user-scalable=0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="smartmenu.min.css" />
+
+		<script>
+			$(function() {
+				$("#smartopen, #smartclose").bind("click", function (){
+					$("#smartmenu").slideToggle("fast");
+				});
+			});
+		</script>
+	</head>
+	<body>
+	<input type="button" id="smartopen" value="open" />
+	<div id="smartmenu">
+		<div id="smartclose"></div>
+		<table>
+		<tr>
+			<td>
+				<a href="#">Link1</a>
+			</td>
+			<td>
+				<a href="#">Link2</a>
+			</td>
+			<td>
+				<a href="#">Link3</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#">Link4</a>
+			</td>
+			<td>
+				<a href="#">Link5</a>
+			</td>
+			<td>
+				<a href="#">Link6</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+	</body>
+</html>
